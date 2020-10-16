@@ -2,7 +2,7 @@
 ><p>Technology: C++</p>
 ><p>Author: Pawel Losik </p>
 
-![Adapter1](./Adapter1.png)
+![Adapter1](./Adapter1.PNG)
 
 
 ## About pattern:
@@ -16,12 +16,12 @@ There are two kinds of adapters( base on composition vs inheritance).
 ### Adapter object
 Object Adapters use a compositional technique to adapt one interface to another. The adapter inherits the target interface that the client expects to see, while it holds an instance of adaptee. Object adapters enable the client and the adaptee to be completely decoupled from eachother. Only the adapter knows about both of them.
 
-![Adapter1](./Adapter2.png)
+![Adapter2](./Adapter2.PNG)
 ### Adapter class
 
 Class adapters use multiple inheritance to achieve their goals. As in the object adapter, the class adapter inherits the interface of the client’s target. However, it also inherits the interface of the adaptee as well. 
 
-![Adapter1](./Adapter3.png)
+![Adapter3](./Adapter3.PNG)
 
 ## Adapter objects vs Adapter class
 
