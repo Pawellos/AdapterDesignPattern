@@ -17,12 +17,15 @@ There are two kinds of adapters( base on composition vs inheritance).
 Object Adapters use a compositional technique to adapt one interface to another. The adapter inherits the target interface that the client expects to see, while it holds an instance of adaptee. Object adapters enable the client and the adaptee to be completely decoupled from eachother. Only the adapter knows about both of them.
 
 ![Adapter2](./Adapter2.PNG)
+<br>
+[code example:](https://github.com/Pawellos/AdapterDesignPattern/blob/main/AdapterObject.hpp) 
 ### Adapter class
 
 Class adapters use multiple inheritance to achieve their goals. As in the object adapter, the class adapter inherits the interface of the client’s target. However, it also inherits the interface of the adaptee as well. 
 
 ![Adapter3](./Adapter3.PNG)
-
+<br>
+[code example:](https://github.com/Pawellos/AdapterDesignPattern/blob/main/AdapterClass.hpp)
 ## Adapter objects vs Adapter class
 
 * Adapter object uses composition it can not only adapt an adaptee class, but any of their subclasses. It is flexible.
@@ -46,3 +49,6 @@ Class adapters use multiple inheritance to achieve their goals. As in the object
 + Open/Closed Principle. You can introduce new types of adapters into the program without breaking the existing client code, as long as they work with the adapters through the client interface.
 
 - The overall complexity of the code increases because you need to introduce a set of new interfaces and classes. Sometimes it’s simpler just to change the service class so that it matches the rest of your code.
+
+## Source
+https://refactoring.guru/design-patterns/adapter
